@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useQuery, gql } from '@apollo/client';
-import useFetch from '../../hooks/useFetch';
 
 const ADS = gql`
   query GetAds {
@@ -45,6 +44,8 @@ const Properties = ({ APIRoute }) => {
   return (
     <Container className="p-4">
       <Row>
+        {loading ? <p>Loading...</p> : ''}
+        {error ? <p>Error: {error.message}</p> : ''}
         {data?.advertisements.data.map((ad) => {
           const {
             title,

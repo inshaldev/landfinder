@@ -10,6 +10,8 @@ export const Navigationbar = () => {
   const [showSignUp, setShowSignUp] = useState(false);
   const [navOpaque, setNavOpaque] = useState(true);
 
+  setNavOpaque(false);
+
   return (
     <Navbar
       className={navOpaque ? 'navbar bg-primary' : 'navbar navbar-opacity'}
