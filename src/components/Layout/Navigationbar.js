@@ -8,17 +8,13 @@ import '../../stylesheets/layout.css';
 export const Navigationbar = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
-  const [navOpaque, setNavOpaque] = useState(true);
-
-  setNavOpaque(false);
 
   return (
     <Navbar
-      className={navOpaque ? 'navbar bg-primary' : 'navbar navbar-opacity'}
+      className="navbar bg-primary"
       collapseOnSelect
       expand="lg"
       variant="dark"
-      fixed={navOpaque ? '' : 'top'}
     >
       <Container>
         <Link className="navbar-brand" to="/">

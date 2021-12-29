@@ -42,7 +42,7 @@ const ADS = gql`
 const Properties = ({ APIRoute }) => {
   const { loading, error, data } = useQuery(ADS);
   return (
-    <Container className="p-4">
+    <Container className="p-2">
       <Row>
         {loading ? <p>Loading...</p> : ''}
         {error ? <p>Error: {error.message}</p> : ''}
