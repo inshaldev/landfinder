@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import '../../stylesheets/home.css';
+import '../../stylesheets/styles.css';
 
 export const Home = () => {
   const heroStyles = {
@@ -16,7 +16,7 @@ export const Home = () => {
           <Col className="min-vh-100 d-flex flex-column justify-content-center align-items-center col-xl-6">
             <div className="text-white">
               <h2 className="fw-bold display-5">
-                Double-Story Mansions
+                Double-Story Houses
                 <br />
                 in Silicon Valley
               </h2>

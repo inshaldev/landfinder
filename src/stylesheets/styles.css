@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar-opacity {
+  background-color: rgb(13, 110, 253, 0.5);
+}
+@media only screen and (min-width: 768px) {
+  .card-img-top {
+    transform: rotate(-2deg) scale(0.95);
+  }
+  .card:hover .card-img-top {
+    transform: rotate(0);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-link-custom {
+    margin-bottom: 8px;
+  }
+}
